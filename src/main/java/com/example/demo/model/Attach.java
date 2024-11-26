@@ -16,7 +16,7 @@ public class Attach {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(nullable = false)
-    private String originalname;
+    private String originalName;
     @Column(nullable = false)
     private String path;
     @Column(nullable = false)
