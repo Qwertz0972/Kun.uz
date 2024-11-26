@@ -21,8 +21,8 @@ public class ArticleLike {
     private Profile profileId;
     @ManyToMany
     private List<Article> articleId;
-    @CreatedDate
-    private Date date;
+    @CreatedDate()
+    private Date createdDate;
     @Column(nullable = false)
     private String status;
 }
