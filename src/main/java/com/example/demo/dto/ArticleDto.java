@@ -17,8 +17,11 @@ public class ArticleDto {
     private String content;
     private Long sharedCount;
     private Long imageId;
-    private List<Region> regionId;
+    private Long regionId;
     private Category categoryId;
     private Long moderatorId;
     private Long publisherId;
+    private String status;
+    private String visible;
+    private Long viewCount;
 }

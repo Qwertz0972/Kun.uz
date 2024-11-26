@@ -10,10 +10,9 @@ import java.sql.Date;
 @NoArgsConstructor
 @Data
 public class ArticleTypeDto {
-    private Long ordernumber;
-    private String nameuz;
-    private String nameru;
-    private String nameeng;
+    private Long orderNumber;
+    private String nameUz;
+    private String nameRu;
+    private String nameEng;
     private String visible;
-    private Date createdDate;
 }
