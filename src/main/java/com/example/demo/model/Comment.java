@@ -26,7 +26,7 @@ public class Comment {
     @Column(nullable = false)
     private String content;
     @ManyToMany
-    private List<Comment>  articleId;
+    private List<Article>  articleId;
     @Column(nullable = false)
     private Long replyId;
     @Column(nullable = false)

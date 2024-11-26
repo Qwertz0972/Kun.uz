@@ -38,9 +38,9 @@ public class Article {
     private Long publisherId;
     @Column(nullable = false)
     private String status;
-    @CreatedDate
+    @CreatedDate()
     private Date createdDate;
-    @CreatedDate
+    @CreatedDate()
     private Date publishedDate;
     @Column(nullable = false)
     private String visible;
