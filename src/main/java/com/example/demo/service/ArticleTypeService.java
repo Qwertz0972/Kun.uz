@@ -19,12 +19,11 @@ public class ArticleTypeService {
     public Result add(ArticleTypeDto articleTypeDto) {
         ArticleType articleType = new ArticleType();
 
-        articleType.setOrdernumber(articleTypeDto.getOrdernumber());
-        articleType.setNameuz(articleTypeDto.getNameuz());
-        articleType.setNameru(articleTypeDto.getNameru());
-        articleType.setNameeng(articleTypeDto.getNameeng());
+        articleType.setOrderNumber(articleTypeDto.getOrderNumber());
+        articleType.setNameUz(articleTypeDto.getNameUz());
+        articleType.setNameRu(articleTypeDto.getNameRu());
+        articleType.setNameEng(articleTypeDto.getNameEng());
         articleType.setVisible(articleTypeDto.getVisible());
-        articleType.setCreatedDate(articleTypeDto.getCreatedDate());
 
         articleTypeRepository.save(articleType);
 
@@ -44,12 +43,11 @@ public class ArticleTypeService {
         if(articleTypeOptional.isPresent()){
             ArticleType articleType = articleTypeOptional.get();
 
-            articleType.setOrdernumber(articleTypeDto.getOrdernumber());
-            articleType.setNameuz(articleTypeDto.getNameuz());
-            articleType.setNameru(articleTypeDto.getNameru());
-            articleType.setNameeng(articleTypeDto.getNameeng());
+            articleType.setOrderNumber(articleTypeDto.getOrderNumber());
+            articleType.setNameUz(articleTypeDto.getNameUz());
+            articleType.setNameRu(articleTypeDto.getNameRu());
+            articleType.setNameEng(articleTypeDto.getNameEng());
             articleType.setVisible(articleTypeDto.getVisible());
-            articleType.setCreatedDate(articleTypeDto.getCreatedDate());
 
             articleTypeRepository.save(articleType);
 

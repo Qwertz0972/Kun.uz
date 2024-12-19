@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.CreatedDate;
 
 import java.sql.Date;
 import java.util.UUID;
@@ -15,17 +16,17 @@ import java.util.UUID;
 public class ArticleType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
     @Column(nullable = false)
-    private Long ordernumber;
+    private Long orderNumber;
     @Column(nullable = false)
-    private String nameuz;
+    private String nameUz;
     @Column(nullable = false)
-    private String nameru;
+    private String nameRu;
     @Column(nullable = false)
-    private String nameeng;
+    private String nameEng;
     @Column(nullable = false)
     private String visible;
-    @Column(nullable = false)
+    @CreatedDate
     private Date createdDate;
 }
